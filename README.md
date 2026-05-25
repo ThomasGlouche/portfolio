@@ -1,73 +1,119 @@
-# React + TypeScript + Vite
+# 🚀 Portfolio — Thomas (Fullstack Developer)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Portfolio personnel développé avec React et TypeScript, déployé sur serveur Linux avec architecture moderne et projets en production.
 
-Currently, two official plugins are available:
+🌐 Live : https://glouche.fr
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 👨‍💻 À propos
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Je suis étudiant ingénieur en informatique à l’ESIEA, spécialisé en développement logiciel, architecture backend et infrastructure.
 
-## Expanding the ESLint configuration
+Je m’intéresse particulièrement à :
+- Développement web fullstack
+- Architectures distribuées
+- DevOps et Linux
+- Automatisation et systèmes
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🧱 Stack technique
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### Frontend
+- React
+- TypeScript
+- TailwindCSS
+- Vite
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### Backend (projets associés)
+- Node.js / Express
+- Java Spring Boot
+- REST API
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### Infrastructure
+- Docker & Docker Compose
+- Linux (Ubuntu Server)
+- Caddy (reverse proxy)
+- MySQL / SQL Server
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 📦 Projets
+
+### 🗺️ Gogole Map
+Application cartographique académique permettant de visualiser et filtrer des villes françaises.
+
+🔗 Demo : https://map.glouche.fr
+
+**Fonctionnalités :**
+- Carte interactive de la France
+- Ajout et gestion de points géographiques
+- Filtrage par densité de population
+- Recherche par rayon
+- API REST backend
+- Architecture multi-services Docker
+
+**Architecture :**
+- Frontend JavaScript
+- Backend Java Spring Boot
+- Base de données MySQL
+- Conteneurisation Docker
+- Tests d’acceptation Cypress
+
+---
+
+### 📊 Application de gestion de stocks (Riou Glass)
+
+Application interne de gestion de stocks développée en alternance.
+
+**Fonctionnalités :**
+- Gestion des entrées/sorties de stock
+- Interface métier
+- Connexion base de données SQL Server
+
+---
+
+### 📈 Reporting & Automatisation (Riou Glass)
+
+- Création de rapports SSRS
+- Développement de flux ETL avec Talend
+- Automatisation de tâches et tests
+
+---
+
+## 🏢 Expérience professionnelle
+
+### Riou Glass — Alternant développeur
+
+**2022 - 2025**
+
+- Développement d’outils internes métier
+- Création de rapports SSRS
+- Mise en place de flux ETL (Talend)
+- Développement d’application de gestion de stocks
+- Automatisation de tests et optimisation de processus
+
+---
+
+## 🚀 Déploiement
+
+- Portfolio hébergé sur serveur personnel Ubuntu
+- Reverse proxy avec Caddy
+- HTTPS automatique
+- Déploiement Docker pour projets backend
+
+---
+
+## 📌 Objectif
+
+Recherche d’un poste en CDI en développement logiciel / fullstack / DevOps à partir de 2025.
+
+---
+
+## 📫 Contact
+
+- GitHub : https://github.com/ThomasGlouche
+- Email : pro@glouche.fr
+- Portfolio : https://glouche.fr
+
