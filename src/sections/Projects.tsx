@@ -25,7 +25,9 @@ export default function Projects() {
                 "MySQL",
                 "Express.js",
                 "Cypress"
-            ]
+            ],
+
+            live: "https://map.glouche.fr"
         },
 
         {
@@ -96,6 +98,7 @@ export default function Projects() {
                         description={project.description}
                         technologies={project.technologies}
                         highlights={project.highlights}
+                        live={project.live}
                     />
                 ))}
 
