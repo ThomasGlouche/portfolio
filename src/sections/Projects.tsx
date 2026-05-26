@@ -1,4 +1,5 @@
 import ProjectCard from "../components/ProjectCard";
+import FadeIn from "../components/FadeIn";
 
 export default function Projects() {
 
@@ -73,36 +74,38 @@ export default function Projects() {
     ];
 
     return (
-        <section
-            id="projects"
-            className="py-32 px-6 max-w-6xl mx-auto"
-        >
-            <div className="mb-16">
+        <FadeIn>
+            <section
+                id="projects"
+                className="py-32 px-6 max-w-6xl mx-auto"
+            >
+                <div className="mb-16">
 
-                <p className="text-blue-400 mb-2">
-                    Projets
-                </p>
+                    <p className="text-blue-400 mb-2">
+                        Projets
+                    </p>
 
-                <h2 className="text-4xl font-bold">
-                    Développement logiciel & infrastructure
-                </h2>
+                    <h2 className="text-4xl font-bold">
+                        Développement logiciel & infrastructure
+                    </h2>
 
-            </div>
+                </div>
 
-            <div className="grid md:grid-cols-2 gap-8">
+                <div className="grid md:grid-cols-2 gap-8">
 
-                {projects.map((project) => (
-                    <ProjectCard
-                        key={project.title}
-                        title={project.title}
-                        description={project.description}
-                        technologies={project.technologies}
-                        highlights={project.highlights}
-                        live={project.live}
-                    />
-                ))}
+                    {projects.map((project) => (
+                        <ProjectCard
+                            key={project.title}
+                            title={project.title}
+                            description={project.description}
+                            technologies={project.technologies}
+                            highlights={project.highlights}
+                            live={project.live}
+                        />
+                    ))}
 
-            </div>
-        </section>
+                </div>
+            </section>
+        </FadeIn>
     );
 }
