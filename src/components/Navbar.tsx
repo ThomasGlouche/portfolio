@@ -54,6 +54,14 @@ export default function Navbar() {
                         Contact
                     </a>
 
+                    <a
+                        href="https://github.com/ThomasGlouche"
+                        target="_blank"
+                        className="hover:text-white transition"
+                    >
+                        GitHub
+                    </a>
+
                 </div>
             </nav>
         </header>

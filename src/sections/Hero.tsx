@@ -141,6 +141,24 @@ export default function Hero() {
                     </a>
 
                     <a
+                        href="/cv.pdf"
+                        download
+                        className="
+            px-8
+            py-4
+            rounded-xl
+            border
+            border-gray-700
+            hover:border-gray-500
+            transition
+            text-gray-300
+            font-medium
+        "
+                    >
+                        Télécharger CV
+                    </a>
+
+                    <a
                         href="https://map.glouche.fr"
                         target="_blank"
                         className="
@@ -200,7 +218,26 @@ export default function Hero() {
 
                 </div>
 
+                <div className="mt-10">
+
+                    <a
+                        href="https://github.com/ThomasGlouche"
+                        target="_blank"
+                        className="
+            text-gray-400
+            hover:text-white
+            transition
+            text-sm
+        "
+                    >
+                        github.com/ThomasGlouche
+                    </a>
+
+                </div>
+
             </motion.div>
+
+
 
         </section>
     );
