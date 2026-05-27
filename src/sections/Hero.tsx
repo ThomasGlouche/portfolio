@@ -60,7 +60,7 @@ export default function Hero() {
                         mb-6
                     "
                 >
-                    Fullstack Developer
+                    Backend • Fullstack • DevOps
                 </p>
 
                 {/* MAIN TITLE */}
@@ -196,7 +196,7 @@ export default function Hero() {
                         "Spring Boot",
                         "Docker",
                         "Linux",
-                        "MySQL"
+                        "PostgreSQL"
                     ].map((tech) => (
                         <span
                             key={tech}

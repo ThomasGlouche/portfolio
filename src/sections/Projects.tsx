@@ -45,7 +45,7 @@ export default function Projects() {
             ],
 
             technologies: [
-                "C#",
+                "Python",
                 ".NET",
                 "SQL Server"
             ]
