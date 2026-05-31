@@ -25,6 +25,18 @@ jobs:
       - name: Build project
         run: npm run build
 
+      - name: Test SSH
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          key: ${{ secrets.SSH_KEY }}
+          port: ${{ secrets.PORT }}
+          script: |
+            whoami
+            hostname
+            ls -ld /var/www/portfolio
+
       - name: Deploy to server
         uses: appleboy/scp-action@v0.1.7
         with:
