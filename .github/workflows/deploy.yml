@@ -32,6 +32,7 @@ jobs:
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.SSH_KEY }}
           port: ${{ secrets.PORT }}
+          passphrase: ${{ secrets.SSH_PASSPHRASE }}
           source: "dist/*"
           target: "/var/www/portfolio"
           strip_components: 1
