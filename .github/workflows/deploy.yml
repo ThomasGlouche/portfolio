@@ -25,6 +25,11 @@ jobs:
       - name: Build project
         run: npm run build
 
+      - name: DNS Check
+        run: |
+          nslookup glouche.fr
+          ping -c 3 glouche.fr || true
+
       - name: Test SSH
         uses: appleboy/ssh-action@v1.0.3
         with:
